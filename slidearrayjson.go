@@ -39,7 +39,7 @@ import "fmt"
 type User struct {
 	FullName string `json:"Name"`
 	Asal     string `json:"Asal"`
-	Age      int
+	Age      int    `json:"Age"`
 }
 
 func main() {
