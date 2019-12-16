@@ -18,7 +18,7 @@ func main() {
 
 	var err = json.Unmarshal(JsonData, &data)
 
-	if err != nil {
+	if err != nil {git 
 		fmt.Println("Error Unmarshalling Json " + err.Error())
 		return
 	}
