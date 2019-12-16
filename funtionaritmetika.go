@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 	x := 8
-	y := 2
+	y := 3
 	result := Add(x, y)
 	fmt.Println(result)
 
@@ -34,7 +34,7 @@ func Multiple(x, y int) int {
 	return value
 }
 
-func Division(x, y int) int {
-	var value = x / y
+func Division(x, y int) float32 {
+	var value = float32(x) / float32(y)
 	return value
 }
