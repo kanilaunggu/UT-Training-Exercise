@@ -1,21 +1,45 @@
 package main
 
-import "fmt"
+import 
+( 
+	"fmt"
+)
 
 func main() {
 	x := 8
 	y := 3
-	result := Add(x, y)
-	fmt.Println(result)
 
-	minku := Min(x, y)
-	fmt.Println(minku)
+	var s string
+	ulang:
+	fmt.Print("Masukkan huruf m,k,d,a : ")
+	fmt.Scan(&s)
+	//fmt.Scanln(&s)
 
-	result1 := Multiple(x, y)
-	fmt.Println(result1)
+	if s == "a" {
+		result := Add(x, y)
+		fmt.Print("Hasil tambah")
+		fmt.Println(result)
+        goto ulang  
+	} else if s == "m" {
 
-	result2 := Division(x, y)
-	fmt.Println(result2)
+		minku := Min(x, y)
+		fmt.Print("Hasil kurang ")
+		fmt.Println(minku)
+		goto ulang
+	} else if s == "k" {
+
+		result1 := Multiple(x, y)
+		fmt.Print("Hasil kali ")
+		fmt.Println(result1)
+		goto ulang
+	} else if s == "d" {
+		result2 := Division(x, y)
+		fmt.Print("Hasil Bagi ")
+		fmt.Println(result2)
+		goto ulang
+	} else {
+		fmt.Println("Keluar")
+	}
 
 }
 
