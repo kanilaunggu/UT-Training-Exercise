@@ -1,6 +1,7 @@
 package main
 
 import (
+	"oop/product"
 	"oop/profile"
 )
 
@@ -10,5 +11,8 @@ func main() {
 
 	profile.GetProfile()
 	profile.SetProfile("Khani", "Launggu", "Sulawesi")
+
+	product := product.New("A", 200)
+	product.GetProduct()
 
 }
